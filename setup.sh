@@ -190,11 +190,22 @@ sudo cp /etc/sudoers /etc/sudoers.bak
 # Allow the user to access the required commands with sudo
 cat >>/etc/sudoers <<<EOL
 # LockSmith Anti-Lockout Privileged Commands
+# User alias specification
+User_Alias      LOCKSMITH = locksmith
+# Cmnd alias specification
+Cmnd_Alias      CMD_REBOOT = /sbin/reboot
+Cmnd_Alias      CMD_IPTABLES = /sbin/iptables
+Cmnd_Alias      CMD_IFCONFIG = /sbin/ifconfig
+Cmnd_Alias      CMD_ROUTE = /sbin/route
+Cmnd_Alias      CMD_ = 
+Cmnd_Alias      CMD_ = 
+
+
 locksmith ALL=(ALL) !ALL
-locksmith ALL=NOPASSWD: /sbin/reboot
-locksmith ALL=NOPASSWD: /sbin/iptables
-locksmith ALL=NOPASSWD: /sbin/ifconfig
-locksmith ALL=NOPASSWD: /sbin/route
+locksmith ALL=NOPASSWD: 
+locksmith ALL=NOPASSWD: 
+locksmith ALL=NOPASSWD: 
+locksmith ALL=NOPASSWD: 
 # End LockSmith Sudoers Config
 EOL
 
