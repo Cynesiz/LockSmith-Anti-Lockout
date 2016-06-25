@@ -1,7 +1,7 @@
 # Server-Anti-Lockout
 ! This is a work in progress and code has not been tested. !
 
-A mechanism to prevent server lock outs by automatically reverting to an emergency configuration and/or reboot depending on a predefined set of factors. I mainly wrote this because everyone makes mistakes, lockouts can be extremely frustrating and time-consuming and because I hate using HP ILO.  
+A mechanism to prevent server lock outs by automatically reverting to an emergency configuration and/or reboot depending on a predefined set of factors. I mainly wrote this because everyone makes mistakes, lockouts can be extremely frustrating and because I hate using HP ILO.  
 
 ## Features Under Development
 - All options fully configurable
